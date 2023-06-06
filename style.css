@@ -32,7 +32,7 @@
     grid-template-rows: repeat(10, 1fr);
     gap: 4px;
     margin-bottom: 10px;
-    color: #f30101;
+    color: #4601f3;
   }
   
   .wordsearch td {
