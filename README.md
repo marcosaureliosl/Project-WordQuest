@@ -1,7 +1,7 @@
 
 # Word-Quest
 
-Welcome to the Word Search Game project! This is a fun and interactive word search game implemented in the MEAN stack. Players can search for words in a grid of letters, horizontally, vertically, or diagonally.
+Welcome to the Word Search Game project! This is a fun and interactive word search game implemented using HTML,CSS and Jvascript. Players can search for words in a grid of letters, horizontally, vertically, or diagonally.
 
 
 
