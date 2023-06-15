@@ -108,30 +108,28 @@ function createWordsearch() {
 
 // Função para inserir as palavras na grade do jogo
 function insertWordsInGrid(words) {
-    const gridSize = wordsearchGrid.length;
-    const shuffledWords = words.map(word => shuffleWord(word.toLowerCase()));
-  
-    const wordsToInsert = [...shuffledWords]; // Cria uma cópia do array shuffledWords
-  
-    for (let i = 0; i < shuffledWords.length; i++) {
-      const word = shuffledWords[i];
-      const inserted = isWordInGrid(wordsearchGrid, word);
-  
-      if (inserted) {
-        wordsToInsert.splice(wordsToInsert.indexOf(word), 1); // Remove a palavra do novo array
-      } else {
-        for (let j = 0; j < word.length; j++) {
-          const posX = Math.floor(Math.random() * gridSize);
-          const posY = Math.floor(Math.random() * gridSize);
-          wordsearchGrid[posX][posY] = word[j];
-        }
+  const gridSize = wordsearchGrid.length;
+  const shuffledWords = words.map(word => shuffleWord(word.toLowerCase()));
+
+  const wordsToInsert = [...shuffledWords]; // Cria uma cópia do array shuffledWords
+
+  for (let i = 0; i < shuffledWords.length; i++) {
+    const word = shuffledWords[i];
+    const inserted = isWordInGrid(wordsearchGrid, word);
+
+    if (inserted) {
+      wordsToInsert.splice(wordsToInsert.indexOf(word), 1); // Remove a palavra do novo array
+    } else {
+      for (let j = 0; j < word.length; j++) {
+        const posX = Math.floor(Math.random() * gridSize);
+        const posY = Math.floor(Math.random() * gridSize);
+        wordsearchGrid[posX][posY] = word[j];
       }
     }
-  
-    words.splice(0, words.length, ...wordsToInsert); // Substitui as palavras no array original
   }
-  
-  
+
+  words.splice(0, words.length, ...wordsToInsert); // Substitui as palavras no array original
+}
 
 // Função para exibir a lista de palavras para encontrar
 function displayWordList(words) {
@@ -141,7 +139,6 @@ function displayWordList(words) {
     wordList.appendChild(wordItem);
   }
 }
-
 // Função para verificar se as palavras foram encontradas corretamente
 function checkWords() {
   const wordItems = wordList.getElementsByTagName('li');
@@ -163,7 +160,6 @@ function checkWords() {
     message.textContent = `Você encontrou ${foundCount} de ${wordItems.length} palavras.`;
   }
 }
-
 // Função principal para iniciar o jogo
 function startGame() {
   createWordsearch();
@@ -171,6 +167,5 @@ function startGame() {
   displayWordList(words);
   checkButton.addEventListener('click', checkWords);
 }
-
 // Inicia o jogo ao carregar a página
 window.addEventListener('DOMContentLoaded', startGame);
