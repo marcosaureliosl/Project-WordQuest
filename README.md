@@ -16,24 +16,6 @@ Welcome to the Word Search Game project! This is a fun and interactive word sear
 - Customizable word lists
 
 
-## Installation
-
-
-```bash
- git clone https://github.com/marcosaureliosl/Word-Quest.git
-```
-
-```bash
-cd Word-Quest
-```
-
-```bash
-npm Install
-```
-
-```bash
-ng serve
-```
 ## Usage
 
 * Start the game by selecting a difficulty level and a word list.
