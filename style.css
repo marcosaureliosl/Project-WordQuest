@@ -120,7 +120,7 @@
     padding: 20px;
     text-align: center;
     border-radius: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   .row-1{
     background-color:  #a379e6;
