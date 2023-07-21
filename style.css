@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgb(194, 183, 183);
+    background-color: rgb(221, 210, 210);
 }
 
 .logo {
@@ -54,7 +54,7 @@
     max-width: 200px;
     top: 30px;
     right: 0;
-    background-color: rgb(133, 120, 120);
+    background-color: rgb(209, 188, 188);
     z-index: 1;
 }
 .profile-dropdown:hover .dropdown{
@@ -72,19 +72,81 @@
     color: rgb(243, 6, 54)
 } 
 
-/* CSS for the main-container */
-.main-container{
-
-}
-
+/* Main container styles */
+.main-container {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(221, 210, 210);
+  }
+  
+  .main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .play-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .play-icon {
+    margin-left: 5px;
+  }
+  
+  .sub-heading {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Blocks 5 in a row styles */
+  .block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .block {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .row-1{
+    background-color:  #a379e6;
+  }
+  .row-2{
+    background-color: #4fd1c5;
+  }
+  .row-3{
+    background-color: #ffaa3c;
+  }
+  .row-4{
+    background-color: #9ac95c;
+  }
+  .row-5{
+    background-color: #54e1f3;
+  }
 /* Main styles for the footer */
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-  }
-  
+}
   .footer-links a {
     color: #fff;
     text-decoration: none;
