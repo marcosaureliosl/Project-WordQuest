@@ -5,13 +5,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(194, 183, 183);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: rgb(194, 183, 183);
 }
 
 .logo {
@@ -63,6 +69,36 @@
 }
 .dropdown a:hover {
     background-color:rgb(194, 183, 183) ;
+    color: rgb(243, 6, 54)
 } 
 
+/* CSS for the main-container */
+.main-container{
 
+}
+
+/* Main styles for the footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-text {
+    margin-top: 10px;
+  }
+  
+  .footer {
+    margin-top: auto;
+  }
