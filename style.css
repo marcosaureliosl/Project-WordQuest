@@ -113,12 +113,14 @@
   }
   
   .block {
+    position: relative;
     width: 200px;
     height: 150px;
     margin: 10px;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
+    cursor: pointer;
   }
   .row-1{
     background-color:  #a379e6;
@@ -135,6 +137,25 @@
   .row-5{
     background-color: #54e1f3;
   }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    color: #fff;
+  }
+  .block-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff;
+  }
+    
 /* Main styles for the footer */
 .footer {
     display: flex;
