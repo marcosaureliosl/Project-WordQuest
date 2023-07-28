@@ -38,8 +38,8 @@
 
             <!-- Blocks 5 in a row -->
             <div class="block-container">
-                <a href="">
-                    <div class="block row-1">
+                <a href="#" onclick="showCategoryOptions('television')"">
+                    <div class="block row-1" id="television">
                         <i class="material-icons icon">tv</i>
                         <p class="block-text">Television</p>
                     </div>
@@ -70,6 +70,17 @@
                 </a>
             </div>
 
+            <!-- Pop-up block with content options for the first set of block 1 -->
+            <div class="category-options-popup" id="movies-options">
+        <span class="close-btn" onclick="closeCategoryOptions('movies-options')">&times;</span>
+        <ul class="category-options-list">
+            <li>The Simpsons Characters</li>
+            <li>Family Guy Charaters</li>
+            <li>Full House</li>
+            <li>Grey's Anatomy</li>
+            <li>Star Trek</li>
+        </ul>
+    </div>
             <!-- Second set of content blocks -->
             <div class="block-container">
                 <a href="">
