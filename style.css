@@ -155,37 +155,6 @@
     color: black;
   }
     
-  /* Styles for the pop-up block with options */
-  .category-options-popup {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .category-options-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .category-options-list li {
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 24px;
-    cursor: pointer;
-  }
 /* Main styles for the footer */
 .footer {
     display: flex;
