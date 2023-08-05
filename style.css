@@ -120,6 +120,8 @@
 
 .content-block-container {
   perspective: 800px;
+  width: 200px;
+  margin: 30px;
 }
 
 .content-block-container:hover > .card {
@@ -183,6 +185,7 @@
   font-size: 26px;
   color: black;
 }
+
 .back {
   width: 200px;
   height: 150px;
@@ -192,7 +195,15 @@
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
+  backface-visibility: hidden;
 }
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .back ul li {
 list-style-type: none;
   text-decoration: none;
