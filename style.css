@@ -98,6 +98,13 @@
   font-size: 20px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.play-button:hover {
+  background-color: #41d246;
+  transform: scale(1.05);
+  box-shadow: 8px 8px 12px rgba(37, 241, 129, 0.567);
+  color: #eff4dd;
 }
 
 .play-icon {
