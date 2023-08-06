@@ -121,7 +121,7 @@
 .content-block-container {
   perspective: 800px;
   width: 200px;
-  margin: 30px;
+  margin: 20px;
 }
 
 .content-block-container:hover > .card {
@@ -207,7 +207,17 @@
 .back ul li {
 list-style-type: none;
   text-decoration: none;
+  margin: 4px;
 }
+.back ul li a{
+  /* list-style-type: none; */
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+  }
+  .back ul li a:hover{
+    color: rgb(109, 103, 103);
+  }
 /* Main styles for the footer */
 .footer {
   display: flex;
